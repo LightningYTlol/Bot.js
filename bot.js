@@ -12,11 +12,9 @@ client.on('message', (message) =>{
     console.log(`[${message.author.tag}] sent: ${message.content}`);
     if (message.content.startsWith(PREFIX)) {
         const [CMD_NAME, ...args] = message.content
-            .trim()
-            .substring(PREFIX.length)
-            .split(" ");
-        console.log(CMD_NAME);
-        console.log(args);
+        .trim()
+        .substring(PREFIX.length)
+        .split(" ");
     }
 });
 
